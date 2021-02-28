@@ -1,213 +1,52 @@
-#logo {
-    margin-left: auto !important;
-    margin-right: auto !important;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.icon {
-    color: black;
+html * { -webkit-text-size-adjust: none; }
+
+.ftf-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.has-text-white{
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
+#ftf-header-logo {
+    z-index: 2000;
+    width: 50%;
+    height: auto;
+    margin-bottom:3rem;
 }
 
-.has-text-black{
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
+#ftf-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.8;
 }
 
-.title{
-    font-family: 'Teko', sans-serif;
-    font-size: 35px;
+.ftf-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background: rgba(180, 1, 1, 0.486);
 }
 
-#weatherCondition{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-.button close{
-    font-family: 'Teko', sans-serif;
-    font-size: 25px; 
-}
-#launchGreen{
-    font-family: 'Teko', sans-serif;
-    font-size: 30px; 
-}
-#launchYellow{
-    font-family: 'Teko', sans-serif;
-    font-size: 30px; 
-}
-#launchRed{
-    font-family: 'Teko', sans-serif;
-    font-size: 30px; 
-}
-.modal-card-body{
-    font-family: 'Teko', sans-serif;
-    font-size: 35px;
+.ftf-header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
 }
 
-h1{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-0{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-0{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-0{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-0{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-1{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-1{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-1{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-1{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-2{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-2{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-2{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-2{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-3{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-3{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-3{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-3{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-4{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-4{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-4{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-4{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-5{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-5{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-5{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-5{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-6{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-6{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-6{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-6{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-7{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-7{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-7{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-7{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-8{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-8{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-8{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-8{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-}
-#resultName-9{
-    font-family: 'Teko', sans-serif;  
-    font-size: 40px;
-}
-#categoryDisplay-9{
-    font-family: 'Teko', sans-serif;  
-    font-size: 27px;
-}
-#resultAddress-9{
-    font-family: 'Teko', sans-serif;  
-    font-size: 25px;
-}
-#isOpen-9{
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
+#ftf-header-1{
+    font-size: 2rem;
 }
